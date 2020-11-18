@@ -17,7 +17,6 @@ public:
     }
     void stringFuntions()
     {
-        char strResult[10];
         char greeting1[6] = { 'H', 'e', 'l', 'l', 'o', '\0' };
         std::cout << "The length of greeting 1 is: "<< strlen(greeting1)<<std::endl; //length of the string/array
         char greeting2[6] = { 'W', 'o', 'r', 'l', 'd', '\0' };

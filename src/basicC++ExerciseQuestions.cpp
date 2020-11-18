@@ -8,6 +8,7 @@
 #include "../functionOverloading/calculateVolume.cpp"
 #include "../modifierTypes/modifierTypesInC++.cpp"
 #include "../stringExamples/stringExample1.cpp"
+#include "../quotientAndReminder/quotientAndReminder.cpp"
 
 int main()
 {
@@ -42,5 +43,9 @@ int main()
     stringExample1 obj6;
     obj6.printMessage();
     obj6.stringFuntions();
+
+    /*Question 8*/
+    quotientAndRemainder obj7;
+    obj7.findQuotientAndRemainder();
 }
 
