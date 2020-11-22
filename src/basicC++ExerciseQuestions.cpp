@@ -9,6 +9,7 @@
 #include "../modifierTypes/modifierTypesInC++.cpp"
 #include "../stringExamples/stringExample1.cpp"
 #include "../quotientAndReminder/quotientAndReminder.cpp"
+#include "../stringExamples/stringExample2.cpp"
 
 int main()
 {
@@ -47,5 +48,9 @@ int main()
     /*Question 8*/
     quotientAndRemainder obj7;
     obj7.findQuotientAndRemainder();
+
+    /*Question 9*/
+    stringExample2 obj8;
+    obj8.readAndDisplayString();
 }
 
