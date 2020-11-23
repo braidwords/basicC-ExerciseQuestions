@@ -10,6 +10,7 @@
 #include "../stringExamples/stringExample1.cpp"
 #include "../quotientAndReminder/quotientAndReminder.cpp"
 #include "../stringExamples/stringExample2.cpp"
+#include "../loopTypes/rangeBasedForLoop.cpp"
 
 int main()
 {
@@ -52,5 +53,8 @@ int main()
     /*Question 9*/
     stringExample2 obj8;
     obj8.readAndDisplayString();
-}
 
+    /*Question 10*/
+    rangeBasedForLoop obj9;
+    obj9.printNumbers();
+}
