@@ -1,5 +1,4 @@
-/*11. Write an example for switch with Enums in C++*/
-
+/*11. Write an example for switch with simple enum in C++*/
 
 #include<iostream>
 
