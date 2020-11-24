@@ -11,6 +11,7 @@
 #include "../quotientAndReminder/quotientAndReminder.cpp"
 #include "../stringExamples/stringExample2.cpp"
 #include "../loopTypes/rangeBasedForLoop.cpp"
+#include "../switchStatementExample/switchStatementExample.cpp"
 
 int main()
 {
@@ -57,4 +58,8 @@ int main()
     /*Question 10*/
     rangeBasedForLoop obj9;
     obj9.printNumbers();
+
+    /*Question 11*/
+    switchWithEnumExample obj10;
+    obj10.userFoodChoice();
 }
