@@ -12,6 +12,7 @@
 #include "../stringExamples/stringExample2.cpp"
 #include "../loopTypes/rangeBasedForLoop.cpp"
 #include "../switchStatementExample/switchStatementExample.cpp"
+#include "../switchStatementExample/switchStatementeExample2.cpp"
 
 int main()
 {
@@ -62,4 +63,9 @@ int main()
     /*Question 11*/
     switchWithEnumExample obj10;
     obj10.userFoodChoice();
+
+    /*Question 12*/
+    switchStatementeExample2 obj11;
+    obj11.chooseYourZodiacMessage();
+    obj11.changeZodiacSign();
 }
