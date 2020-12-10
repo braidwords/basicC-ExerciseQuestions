@@ -7,13 +7,13 @@ class switchWithEnumExample
 {
     enum Food { Pizza, Pasta, FruitSalad, Veggies };
     //Food foodRef = Pizza;
-    int userChoice = 0;
+    int userChoice = 1;
 public:
 
     void userFoodChoice()
     {
         std::cout << "Enter your choice from these options abd get your health message!" << std::endl;
-        std::cout << " Pizza "<<"            " <<"Pasta "<<"            "<<" FruitSalad "<<"            "<< " Veggies "<< std::endl;
+        std::cout << " 1. Pizza "<<"            " <<"2. Pasta "<<"            "<<"3. FruitSalad "<<"            "<< "4. Veggies "<< std::endl;
         std::cin >> userChoice;
         chooseYourHealthMessage(userChoice);
     }
@@ -37,6 +37,8 @@ public:
         case Veggies:
             std::cout << "Try to eat Veggies in your Lunch" << std::endl;
             break;
+        default:
+            std::cout << "That's not an option yet"<<std::endl;
         }
     }
 };

@@ -13,6 +13,7 @@
 #include "../loopTypes/rangeBasedForLoop.cpp"
 #include "../switchStatementExample/switchStatementExample.cpp"
 #include "../switchStatementExample/switchStatementeExample2.cpp"
+#include "../stlExamples/mapExample.cpp"
 
 int main()
 {
@@ -68,4 +69,8 @@ int main()
     switchStatementeExample2 obj11;
     obj11.chooseYourZodiacMessage();
     obj11.changeZodiacSign();
+
+    /*Question 13*/
+    mapExample obj12;
+    obj12.addEmployee();
 }
