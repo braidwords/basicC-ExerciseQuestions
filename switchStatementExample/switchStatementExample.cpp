@@ -1,25 +1,32 @@
 /*11. Write an example for switch with simple enum in C++*/
 
-#include<iostream>
+#include <iostream>
 
 
 class switchWithEnumExample
 {
-    enum Food { Pizza, Pasta, FruitSalad, Veggies };
+    enum Food { Pizza = 1,
+        Pasta = 2,
+        FruitSalad = 3,
+        Veggies = 4 };
     //Food foodRef = Pizza;
     int userChoice = 1;
-public:
 
-    void userFoodChoice()
-    {
+public:
+    void userFoodChoice() {
         std::cout << "Enter your choice from these options and get your health message!" << std::endl;
-        std::cout << " 0. Pizza "<<"            " <<"1. Pasta "<<"            "<<"2. FruitSalad "<<"            "<< "3. Veggies "<< std::endl;
+        std::cout << " 1. Pizza "
+                  << "            "
+                  << "2. Pasta "
+                  << "            "
+                  << "3. FruitSalad "
+                  << "            "
+                  << "4. Veggies " << std::endl;
         std::cin >> userChoice;
         chooseYourHealthMessage(userChoice);
     }
 
-    void chooseYourHealthMessage(int choice)
-    {
+    void chooseYourHealthMessage(int choice) {
         switch (choice)
         {
         case Pizza:
@@ -38,7 +45,7 @@ public:
             std::cout << "Try to eat Veggies in your Lunch" << std::endl;
             break;
         default:
-            std::cout << "That's not an option yet"<<std::endl;
+            std::cout << "That's not an option yet" << std::endl;
         }
     }
 };
