@@ -12,8 +12,8 @@ public:
 
     void userFoodChoice()
     {
-        std::cout << "Enter your choice from these options abd get your health message!" << std::endl;
-        std::cout << " 1. Pizza "<<"            " <<"2. Pasta "<<"            "<<"3. FruitSalad "<<"            "<< "4. Veggies "<< std::endl;
+        std::cout << "Enter your choice from these options and get your health message!" << std::endl;
+        std::cout << " 0. Pizza "<<"            " <<"1. Pasta "<<"            "<<"2. FruitSalad "<<"            "<< "3. Veggies "<< std::endl;
         std::cin >> userChoice;
         chooseYourHealthMessage(userChoice);
     }

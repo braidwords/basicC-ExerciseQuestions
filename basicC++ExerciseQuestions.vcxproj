@@ -140,13 +140,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="checkLimits\checkLimits.cpp" />
+    <ClCompile Include="stlExamples\mapExample.cpp" />
     <ClCompile Include="functionOverloading\calculateVolume.cpp" />
+    <ClCompile Include="loopTypes\rangeBasedForLoop.cpp" />
     <ClCompile Include="modifierTypes\modifierTypesInC++.cpp" />
+    <ClCompile Include="moduleConceptInC++\moduleConceptInC++.cpp" />
+    <ClCompile Include="quotientAndReminder\quotientAndReminder.cpp" />
     <ClCompile Include="sizeOfOperatorExample\sizeOfOperatorExample.cpp" />
+    <ClCompile Include="stringExamples\stringExample2.cpp" />
     <ClCompile Include="stringExamples\stringExample1.cpp" />
+    <ClCompile Include="stringStreamClassExample\stringStreamClassExample.cpp" />
     <ClCompile Include="sumOfNumbers\sumOfNumbers.cpp" />
+    <ClCompile Include="switchStatementExample\switchStatementeExample2.cpp" />
+    <ClCompile Include="switchStatementExample\switchStatementExample.cpp" />
     <ClCompile Include="welcomeText\welcomeText.cpp" />
     <ClCompile Include="src\basicC++ExerciseQuestions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".clang-format" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
