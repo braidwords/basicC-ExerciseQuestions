@@ -14,6 +14,7 @@
 #include "../switchStatementExample/switchStatementExample.cpp"
 #include "../switchStatementExample/switchStatementeExample2.cpp"
 #include "../stlExamples/mapExample.cpp"
+#include "../stlExamples/mapExample2.cpp"
 
 int main()
 {
@@ -73,4 +74,9 @@ int main()
     /*Question 13*/
     mapExample obj12;
     obj12.addEmployee();
+
+    /*Question 14*/
+    mapExample2 obj13;
+    obj13.addEmployee();
+
 }

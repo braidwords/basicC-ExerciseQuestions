@@ -1,4 +1,4 @@
-/*Question 13: Demonstrate an example on map in C++.*/
+/*Question 14: Demonstrate an example on map in C++.*/
 /** Map in C++ holds key-value relationship.Key is always unique and cannot be duplicated however, values can be same for an unique key.
 * Map has sorted order on the basis of key. 
 * By default, it is always in the ascending order. However, we can make it in descending order.
@@ -8,31 +8,35 @@
 #include <iostream>
 #include <map>
 #include <string>
+#include <vector>
 
 
 
-class mapExample
+class mapExample2
 {
 private:
     std::string employeeName;
-    int employeeID=0;
+    int employeeID = 0;
 
 public:
-    std::map<int, std::string, std::greater<>> newEmployee; //Here sort order will be descending order because we are using built-in "greater" operator
+    std::map<int, std::vector<std::string>, std::greater<>> newEmployee; //Here sort order will be descending order because we are using built-in "greater" operator
     void addEmployee() {
         std::cout << "Adding new Employees" << std::endl;
-        newEmployee[1] = "Shyam"; //Way 1 to add details in the map
-        newEmployee.insert(std::make_pair(2, "Ram"));
-        newEmployee.insert(std::make_pair(3, "HariOm")); //Way 2 to add details in the map
+        newEmployee[1].push_back("Shyam");
+        newEmployee[1].push_back("Singh");
+        newEmployee[2].push_back("Mohan");
+        newEmployee[2].push_back("Negi");
         std::cout << "Here is the Employee List" << std::endl;
         displayEmployees();
     }
     void displayEmployees() {
-        std::map<int, std::string>::iterator it = newEmployee.begin();
-        while (it != newEmployee.end())
+        for (auto& element1 : newEmployee)
         {
-            std::cout << it->first << " :: " << it->second << std::endl;
-            it++;
+            std::cout << element1.first << " : ";
+            for (auto& element2 : element1.second)
+            {
+                std::cout << element2 << " "; 
+            }
         }
     }
 };
