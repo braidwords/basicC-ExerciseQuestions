@@ -13,8 +13,10 @@
 #include "../loopTypes/rangeBasedForLoop.cpp"
 #include "../switchStatementExample/switchStatementExample.cpp"
 #include "../switchStatementExample/switchStatementeExample2.cpp"
-#include "../stlExamples/mapExample.cpp"
-#include "../stlExamples/mapExample2.cpp"
+#include "../stdExamples/mapExample.cpp"
+#include "../stdExamples/mapExample2.cpp"
+#include "../switchStatementExample/switchStatmentExample3.cpp"
+#include "../switchStatementExample/switchStatementExample4.cpp"
 
 int main()
 {
@@ -78,5 +80,13 @@ int main()
     /*Question 14*/
     mapExample2 obj13;
     obj13.addEmployee();
+
+     /*Question 15*/
+    switchStatmentExample3 obj14;
+    obj14.Test();
+
+    /*Question 16*/
+    switchStatmentExample4 obj15;
+    obj15.test();
 
 }
