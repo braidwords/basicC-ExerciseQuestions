@@ -16,10 +16,9 @@
 #include "../stdExamples/mapExample.cpp"
 #include "../stdExamples/mapExample2.cpp"
 #include "../switchStatementExample/switchStatmentExample3.cpp"
-#include "../switchStatementExample/switchStatementExample4.cpp"
+#include "../tupleExample/tupleExample.cpp"
 
-int main()
-{
+int main() {
     /*Question 1*/
     std::cout << "Hello World!\n";
     welcomeText obj1;
@@ -41,7 +40,7 @@ int main()
     calculateVolume obj5;
     obj5.volume(20);         //This will invoke volume of cube
     obj5.volume(10, 20);     //This will invoke volume of Cylinder
-    obj5.volume(10, 20, 30); //This will invoke volume of Cuboid 
+    obj5.volume(10, 20, 30); //This will invoke volume of Cuboid
 
     /*Question 6*/
     modiferTypes obj6;
@@ -81,12 +80,11 @@ int main()
     mapExample2 obj14;
     obj14.addEmployee();
 
-     /*Question 15*/
+    /*Question 15*/
     switchStatmentExample3 obj15;
     obj15.Test();
 
     /*Question 16*/
-    switchStatmentExample4 obj16;
-    obj16.test();
-
+    tupleExample obj16;
+    obj16.getResponse();
 }
